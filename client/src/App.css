@@ -30,3 +30,27 @@
 .body{
   font-size: 20px;
 }
+
+
+.formContainer{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inputCreatePost{
+  padding: 10px;
+}
+
+.formContainer label{
+  font-size: 25px;
+}
+
+.formContainer button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
