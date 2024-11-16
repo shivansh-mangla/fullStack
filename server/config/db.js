@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // MongoDB connection URI
-const mongoURI = 'mongodb://localhost:27017/myApp';
+const mongoURI = 'mongodb://localhost:27017/myApp';  // myApp becomes the database name
 
 
 const connectDB = async () => {

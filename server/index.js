@@ -9,7 +9,7 @@ connectDB();
 
 //Router
 const postRouter = require('./routes/Posts');
-app.use("/myPosts", postRouter);
+app.use("/myPosts", postRouter);  // uses the route /myPosts
 
 
 app.listen(3001, ()=>{

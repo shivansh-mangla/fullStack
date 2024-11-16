@@ -1,24 +1,28 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/userModel');
+const Posts = require('../models/postModel');
 
 
-router.get("/", (req, res) =>{
-  res.send("Hello World");
+// A basic GET request to get list of all Posts
+router.get("/", async (req, res) =>{
+  // res.send("Hello World");
+  const listOfPosts = await Posts.find();
+  res.json(listOfPosts);
 });
 
+
+// A basic POST request to add a new Post into database
 router.post("/", async (req, res) => {
-  const userData = req.body; // Access the data sent in the POST request
+  const postsData = req.body; // Access the data sent in the POST request
 
   // Log the incoming data
-  console.log('Received Data:', userData);
+  console.log('Received Data:', postsData);
 
   // Create a new document using the Mongoose model
-  const newUser = new User(userData);
+  const newPost = new Posts(postsData);
 
   // Save the document into MongoDB
-  const savedUser = await newUser.save();
-
+  const savedPost = await newPost.save();
 });
 
 module.exports = router;
