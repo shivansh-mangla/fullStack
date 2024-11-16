@@ -20,3 +20,19 @@
 8) npm install mongodb mongoose
 
 9) npm start
+
+# Steps 01->
+
+1) Create directory structure
+  server
+  |
+  |- config/
+  |     |- db.js
+  |
+  |- models/
+  |    |- userModel.js
+  |
+  |- routes/
+       |- Posts.js
+
+
