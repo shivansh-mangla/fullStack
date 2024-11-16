@@ -58,3 +58,40 @@
 .formContainer span{
   color: red;
 }
+
+.add-comment-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.add-comment-container input{
+  padding: 20px;
+  width: 100%;
+}
+.add-comment-container button{
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(217, 133, 133);
+}
+
+.comment{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.comment-date{
+  color: black;
+  font-size: 15px;
+}
+
+.comment-body{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}

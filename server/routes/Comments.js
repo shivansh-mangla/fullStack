@@ -22,6 +22,8 @@ router.post("/:postId", async(req, res) => {
     postId,
     { $push: { comments: savedComment._id } }
   );
+
+  res.json(savedComment);
 });
 
 
