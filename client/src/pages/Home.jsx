@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
 
   const [listOfPosts, setListOfPosts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:3001/myPosts").then((response) => {
@@ -16,7 +18,7 @@ function Home() {
     <>
       {listOfPosts.map((value, index) => {
         return (
-          <div className="post">
+          <div className="post" onClick={() => {navigate(`/post/${value._id}`)}}>
             <div className="title">
               {value.title}
             </div>

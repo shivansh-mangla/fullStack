@@ -5,7 +5,8 @@ const postSchema = new mongoose.Schema({
   title: { type: String, required: true },
   postText: { type: String, required: true },
   username: { type: String, required: true },
-}, { timestamps: true }); // Automatically adds `createdAt` and `updatedAt` fields
+  comments: [ {type: mongoose.Schema.Types.ObjectId, ref: 'Comment'} ] // Reference to comments
+}, { timestamps: true });
 
 // Create model for Posts
 const Post = mongoose.model('Post', postSchema);  // Automatically creates a collection by the name 'Posts'

@@ -12,6 +12,9 @@ connectDB();
 const postRouter = require('./routes/Posts');
 app.use("/myPosts", postRouter);  // uses the route /myPosts
 
+const commentRouter = require('./routes/Comments');
+app.use("/myComments", commentRouter);
+
 
 app.listen(3001, ()=>{
   console.log("Server running on port 3001");
