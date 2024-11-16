@@ -64,3 +64,16 @@
 
 # Steps 03->
 
+1) import useParams hook from react-router-dom
+
+2) import { useNavigate } from 'react-router-dom';
+
+3) Add comments
+
+4) // Update commentsList without reloading
+      setCommentsList((prevComments) => [...prevComments, response.data]);
+      setNewComment("");
+
+   for input -> onChange={(event)=>{setNewComment(event.target.value)}} value={newComment}
+
+
