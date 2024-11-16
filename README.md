@@ -48,4 +48,19 @@
 
 7) Use CORS in backend, run frontend using npm run dev
 
+# Steps 02 ->
+
+1) cd client
+
+2) npm install react-router-dom
+
+3) Create a folder named 'pages' inside src of frontend
+
+4) create CreatePost.jsx
+
+5) npm install formik yup
+
+6) Create form and add validationSchema, initialValues, onSubmit function, errorMessage
+
+# Steps 03->
 
