@@ -19,7 +19,7 @@
 
 8) npm install mongodb mongoose
 
-9) npm start
+9) npm start (for backend server)
 
 # Steps 01->
 
@@ -33,6 +33,19 @@
   |    |- userModel.js
   |
   |- routes/
-       |- Posts.js
+  |     |- Posts.js
+  |- index.js
+
+2) go to parent directory and create react frontend in client using->
+
+3) npm create vite@latest client
+
+4) Remove everything from App.jsx and main.jsx
+
+5) npm install axios
+
+6) use useEffect hook for getting data
+
+7) Use CORS in backend, run frontend using npm run dev
 
 
